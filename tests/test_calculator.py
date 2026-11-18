@@ -43,3 +43,6 @@ class TestCalculator(unittest.TestCase):
 # This condition allows the test to be run directly from the command line
 if __name__ == '__main__':
     unittest.main()
+class BrokenTest(unittest.TestCase):
+   def test_broken(self):
+        self.fail("This test is broken")
